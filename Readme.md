@@ -24,7 +24,9 @@ npm i --save insee-municipality-code
 import InseeCode from "insee-municipality-code"
 
 InseeCode.getCode({ postalCode: "14710", name: "Colombières" }) // "14168"
-InseeCode.getMunicipality("14168") // { postalCode: "14710", name: "Colombières" }
+InseeCode.getCode({ name: "Collonbieres" }) // "14168"
+InseeCode.getMunicipality("14168") // { postalCode: "14710", name: "COLOMBIERES" }
+InseeCode.getMunicipality("96501") // null
 ```
 
 ## Api
