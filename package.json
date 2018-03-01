@@ -38,5 +38,8 @@
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "dependencies": {
+    "fuse.js": "^3.2.0"
   }
 }

@@ -33,3 +33,7 @@ it("returns municipality", () => {
     name: "COLOMBIERES",
   })
 })
+
+it("returns null if no municipality", () => {
+  expect(getMunicipality("96168")).toBe(null)
+})
