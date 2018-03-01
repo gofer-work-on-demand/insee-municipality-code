@@ -12,14 +12,17 @@ const getCities = () => {
   })
 }
 
-const fuse = new Fuse(getCities(), {
-  shouldSort: true,
-  id: "insee",
-  keys: ["name", "postalCode"],
-  threshold: 1.0,
-})
+let fuse
 
 export default ({ name = "", postalCode = "" } = {}) => {
+  if (!fuse) {
+    fuse = new Fuse(getCities(), {
+      shouldSort: true,
+      id: "insee",
+      keys: ["name", "postalCode"],
+      threshold: 1.0,
+    })
+  }
   if (!name && !postalCode) {
     throw new Error("Please provide either name or postalCode")
   }
