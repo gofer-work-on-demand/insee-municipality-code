@@ -1,0 +1,42 @@
+{
+  "name": "insee-municipality-code",
+  "version": "1.0.0",
+  "description": "🇫🇷 Get the INSEE municipality code from postal code and name of French municipality",
+  "main": "dist/index.js",
+  "author": "Aymeric Bouzy <aymeric.bouzy@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "INSEE",
+    "municipality",
+    "fuzzy"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "codecov": "^3.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "jest": "^22.4.0",
+    "regenerator-runtime": "^0.11.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "aymericbouzy/insee-municipality-code"
+  },
+  "homepage": "https://github.com/aymericbouzy/insee-municipality-code",
+  "files": [
+    "dist",
+    "data"
+  ],
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  }
+}
