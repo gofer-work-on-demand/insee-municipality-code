@@ -2,8 +2,6 @@
 
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![npm version](https://badge.fury.io/js/insee-municipality-code.svg)](http://badge.fury.io/js/insee-municipality-code) [![CircleCI Build Status](https://circleci.com/gh/aymericbouzy/insee-municipality-code.svg?style=shield)](https://circleci.com/gh/aymericbouzy/insee-municipality-code) [![codecov](https://codecov.io/gh/aymericbouzy/insee-municipality-code/branch/master/graph/badge.svg)](https://codecov.io/gh/aymericbouzy/insee-municipality-code)
 
-[WIP]
-
 Simply provide the postal code and / or name of a French municipality and get the most likely INSEE municipality code
 
 ## Installation
