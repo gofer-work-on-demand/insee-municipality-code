@@ -1,6 +1,6 @@
 {
   "name": "insee-municipality-code",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "🇫🇷 Get the INSEE municipality code from postal code and name of French municipality",
   "main": "dist/index.js",
   "author": "Aymeric Bouzy <aymeric.bouzy@gmail.com>",
@@ -12,6 +12,7 @@
     "fuzzy"
   ],
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
