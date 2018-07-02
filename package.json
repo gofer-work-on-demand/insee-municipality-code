@@ -1,6 +1,6 @@
 {
   "name": "insee-municipality-code",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🇫🇷 Get the INSEE municipality code from postal code and name of French municipality",
   "main": "dist/index.js",
   "author": "Aymeric Bouzy <aymeric.bouzy@gmail.com>",
