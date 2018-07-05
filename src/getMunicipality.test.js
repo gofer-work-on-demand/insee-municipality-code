@@ -29,6 +29,7 @@ it("rejects not well formed argument", () => {
 
 it("returns municipality", () => {
   expect(getMunicipality("14168")).toEqual({
+    insee: "14168",
     postalCode: "14710",
     name: "COLOMBIERES",
   })
