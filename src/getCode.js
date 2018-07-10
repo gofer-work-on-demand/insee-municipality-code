@@ -1,10 +1,11 @@
 import Fuse from "fuse.js"
 import cities from "../data/cities.json"
+import normalize from "./normalize"
 
 const getCitiesByPostalCode = ({ postalCode, cities }) =>
   cities.filter(city => city.postalCode == postalCode)
 const getCitiesByName = ({ name, cities }) => {
-  const uppercaseName = name.toUpperCase()
+  const uppercaseName = normalize(name)
   return cities.filter(city => city.name === uppercaseName)
 }
 

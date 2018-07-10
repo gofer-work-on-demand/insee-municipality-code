@@ -25,3 +25,12 @@ it("works for Chartres", () => {
 it("works for Saint Denis", () => {
   expect(getCode({ name: "Saint-Denis", postalCode: "93200" })).toBe("93066")
 })
+
+it("works for Saint-Maur-Des-Fossés", () => {
+  expect(
+    getCode({
+      name: "Saint-Maur-Des-Fossés",
+      postalCode: "94100",
+    }),
+  ).toBe("94068")
+})
