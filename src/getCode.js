@@ -5,8 +5,8 @@ import normalize from "./normalize"
 const getCitiesByPostalCode = ({ postalCode, cities }) =>
   cities.filter(city => city.postalCode == postalCode)
 const getCitiesByName = ({ name, cities }) => {
-  const uppercaseName = normalize(name)
-  return cities.filter(city => normalize(city.name) === uppercaseName)
+  const regex = new RegExp(normalize(name))
+  return cities.filter(city => regex.test(normalize(city.name)))
 }
 
 let nameFuse, postalCodeFuse
