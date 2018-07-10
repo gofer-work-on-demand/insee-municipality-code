@@ -21,7 +21,7 @@ it("replaces accents", () => {
 })
 
 it("removes non alphanumeric characters", () => {
-  expect(normalize("L'Hay-les-Roses")).toBe("L'HAY-LES-ROSES")
+  expect(normalize("L'Hay-les-Roses")).toBe("L'HAY LES ROSES")
   expect(normalize("Mme.")).toBe("MME.")
   expect(normalize("test 女 kanji")).toBe("TEST KANJI")
 })

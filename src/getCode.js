@@ -6,7 +6,7 @@ const getCitiesByPostalCode = ({ postalCode, cities }) =>
   cities.filter(city => city.postalCode == postalCode)
 const getCitiesByName = ({ name, cities }) => {
   const uppercaseName = normalize(name)
-  return cities.filter(city => city.name === uppercaseName)
+  return cities.filter(city => normalize(city.name) === uppercaseName)
 }
 
 let nameFuse, postalCodeFuse

@@ -8,7 +8,7 @@ export default (string = "") => {
     string = string.toString()
   }
   return latinize(string)
-    .replace(/[^-0-9a-zA-Z .,'"]/g, " ")
+    .replace(/[^0-9a-zA-Z .,'"]/g, " ")
     .replace(/\s+/g, " ")
     .toUpperCase()
     .trim()

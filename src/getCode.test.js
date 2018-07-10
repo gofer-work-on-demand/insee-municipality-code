@@ -33,4 +33,10 @@ it("works for Saint-Maur-Des-Fossés", () => {
       postalCode: "94100",
     }),
   ).toBe("94068")
+  expect(
+    getCode({
+      name: "Saint maur des fosses",
+      postalCode: "94100",
+    }),
+  ).toBe("94068")
 })
