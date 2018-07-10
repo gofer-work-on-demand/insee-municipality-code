@@ -38,3 +38,25 @@ it("returns municipality", () => {
 it("returns null if no municipality", () => {
   expect(getMunicipality("96168")).toBe(null)
 })
+
+it("works for Saint-Maur-des-Fossés", () => {
+  expect(getMunicipality("94068", { postalCode: "94100" })).toEqual({
+    insee: "94068",
+    postalCode: "94100",
+    name: "SAINT-MAUR-DES-FOSSES",
+  })
+  expect(getMunicipality("94068", { postalCode: "94210" })).toEqual({
+    insee: "94068",
+    postalCode: "94210",
+    name: "SAINT-MAUR-DES-FOSSES",
+  })
+  expect(
+    getMunicipality("94068", {
+      postalCode: "94200",
+    }),
+  ).toEqual({
+    insee: "94068",
+    postalCode: "94100",
+    name: "SAINT-MAUR-DES-FOSSES",
+  })
+})

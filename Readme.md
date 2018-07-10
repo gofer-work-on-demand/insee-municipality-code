@@ -33,7 +33,9 @@ InseeCode.getMunicipality("96501") // null
 | Method | arguments | returned value | throws |
 | ------ | --------- | -------------- | ------ |
 | `getCode` | `params: { postalCode: string? \| number?, name: string? }` | `string`: the most likely Insee code regarding your input | will throw if both params are empty |
-| `getMunicipality` | `string` | `{ postalCode: string, name: string }?`: the corresponding city (if it exists) | will throw if insee code is not well formated (`/(\d{2}|2[AB])\d{3}/i`) |
+| `getMunicipality` | `string, params: { postalCode: string? \| number? }?` | `{ postalCode: string, name: string }?`: the corresponding city (if it exists).<sup>1</sup> | will throw if insee code is not well formated (`/(\d{2}|2[AB])\d{3}/i`) |
+
+<sup>1</sup>The second argument is optional and used to help decide which postalCode to return when the city corresponding to the Insee code has many options. e.g. : `Saint-Maur-des-Fossés` has Insee code `94068` and postal codes `94100` and `94210`.
 
 ## Dependencies
 
