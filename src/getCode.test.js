@@ -15,7 +15,7 @@ it("returns expected result when input is perfect", () => {
 it("returns expected result when input is altered", () => {
   expect(getCode({ name: "Collonbier", postalCode: "14710" })).toBe("14168")
   expect(getCode({ name: "Colombieres", postalCode: "15710" })).toBe("14168")
-  expect(getCode({ name: "Lyon" })).toBe("69383")
+  expect(getCode({ name: "Lyon" })).toBe("69381")
 })
 
 it("works for Chartres", () => {
